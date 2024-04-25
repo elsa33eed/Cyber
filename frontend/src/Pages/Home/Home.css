@@ -1,0 +1,76 @@
+.home {
+  margin-top: 60px;
+  background-color: #211c24;
+  color: #ffffff;
+}
+.home .image {
+  height: calc(100vh - 60px);
+}
+.form-control:focus {
+  border-color: #000000 !important;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.082) !important;
+}
+.favIcon:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.cartIcon:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.userIcon:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.banners p {
+  color: #909090;
+}
+@media (min-width: 992px) {
+  /* .banners .playstation {
+    height: 85%;
+  } */
+  .banners .playstation img {
+    width: 600px;
+    position: relative;
+    left: -90px;
+    top: 8px;
+  }
+  .banners .headphone img {
+    width: 350px;
+    position: relative;
+    left: -55%;
+  }
+  .banners .headphone .headphone-info {
+    position: relative;
+    left: -35px;
+  }
+  .banners .headphone .headphone-info h3 {
+    font-size: 20px;
+    text-align: start;
+  }
+  .banners .headphone .headphone-info p {
+    width: 145px;
+    font-size: 15px;
+    text-align: start;
+    color: #909090;
+  }
+  .banners .var .var-info h3 {
+    font-size: 20px;
+  }
+  .banners .var .var-info p {
+    font-size: 15px;
+  }
+  .banners .var .var-banner img {
+    position: relative;
+    left: -30%;
+  }
+}
