@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/Cyper');
+mongoose.connect('mongodb+srv://abdallaatef12:Cyper01@cypercluster.hh8y4fx.mongodb.net/cyper');
 let db  = mongoose.connection;
 db.on("error",()=>{
     console.log("Error Connecting to DB");
