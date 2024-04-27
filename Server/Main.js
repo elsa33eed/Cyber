@@ -1,10 +1,11 @@
 const bodyParser = require('body-parser');
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 const MobileRouter = require('./Routes/Mobiles');
 const LaptopRouter = require('./Routes/Laptops');
-const AccessoriesRouter = require('./Routes/Accessories')
-const CategoriesRouter = require('./Routes/AcessoriesCategory')
+const AccessoriesRouter = require('./Routes/Accessories');
+const CategoriesRouter = require('./Routes/AcessoriesCategory');
+const UserRouter = require('./Routes/Users');
 const PORT = process.env.PORT || 7005;
 
 //handle Parsing
@@ -22,6 +23,9 @@ app.use('/api/Accessories',AccessoriesRouter)
 
 //use Categories router
 app.use('/api/AccessoriesCategories',CategoriesRouter)
+
+//use User router
+app.use('/api/Users',UserRouter)
 
 //listen on server
 app.listen(PORT,()=>{console.log("http://localhost:"+PORT);})
