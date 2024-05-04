@@ -1,0 +1,37 @@
+.footer .services ul,
+.footer .Assistance ul {
+  list-style: none;
+  text-align: start;
+}
+.footer .services ul li,
+.footer .Assistance ul li {
+  color: #cfcfcf;
+  font-size: 13px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.footer .services ul li:hover,
+.footer .Assistance ul li:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.footer .social-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer .social-links a:hover {
+  transition: 0.3s;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}

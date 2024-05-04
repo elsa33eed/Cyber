@@ -4,8 +4,10 @@ import Box from "@mui/material/Box";
 
 export default function CircularIndeterminate() {
   return (
-    <Box sx={{ display: "flex" }}>
-      <CircularProgress />
-    </Box>
+    <div className="d-flex justify-content-center align-items-center">
+      <Box sx={{ display: "flex" }}>
+        <CircularProgress />
+      </Box>
+    </div>
   );
 }

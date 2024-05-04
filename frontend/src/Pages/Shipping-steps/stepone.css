@@ -1,0 +1,34 @@
+.step-one {
+  margin-top: 60px;
+  border-top: 1px solid #b5b5b5;
+}
+.step-one .steps p {
+  font-size: 12px;
+  font-weight: bold;
+}
+.step-one .steps h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.step-one .steps .shipping,
+.step-one .steps .payment {
+  color: #b2b2b2;
+}
+.step-one .add-address .icon h5 {
+  background-color: #000000;
+  color: #ffffff;
+  width: 27px;
+  height: 27px;
+  margin: 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.step-one .add-address .icon span {
+  border-top: 1px dotted #e6e6e6;
+}
+.step-one .add-address .text p {
+  font-size: 14px;
+}

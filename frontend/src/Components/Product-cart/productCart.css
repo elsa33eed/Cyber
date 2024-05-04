@@ -1,0 +1,24 @@
+.product-cart:not(:last-child) {
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.product-cart .counter {
+  font-size: 20px;
+}
+.product-cart .counter button {
+  background-color: transparent;
+  border: none;
+  padding: 0 7px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.product-cart .counter span {
+  border: 1px solid #d9d9d9;
+  padding: 0px 8px;
+}
+.product-cart .group-two .icon {
+  cursor: pointer;
+}

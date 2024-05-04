@@ -1,3 +1,4 @@
+/* start home section */
 .home {
   margin-top: 60px;
   background-color: #211c24;
@@ -10,38 +11,112 @@
   border-color: #000000 !important;
   box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.082) !important;
 }
-.favIcon:hover {
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-}
-.cartIcon:hover {
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-}
-.userIcon:hover {
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-}
+
+/* start banners section */
 .banners p {
   color: #909090;
 }
+
+/* start category section */
+.category {
+  background-color: #fafafa;
+}
+.category .content ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 0;
+}
+.category .content ul li {
+  background-color: #ededed;
+  width: 125px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  font-size: 13px;
+}
+.category .content ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* start shop section */
+.shop .search-menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8b8b8b;
+  cursor: pointer;
+}
+.shop .search-menu li.active {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+  font-size: 14px;
+}
+.shop .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.shop .icon svg:hover {
+  color: red;
+}
+
+/* start shop category */
+.shop-category h3 {
+  width: max-content;
+}
+
+/* start discounts section */
+.discounts .search-menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8b8b8b;
+  cursor: pointer;
+}
+.discounts .search-menu li.active {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+  font-size: 14px;
+}
+.discounts .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.discounts .icon svg:hover {
+  color: red;
+}
+
+/* edit on large devices */
 @media (min-width: 992px) {
   /* .banners .playstation {
     height: 85%;
   } */
   .banners .playstation img {
-    width: 600px;
+    width: 235px;
     position: relative;
-    left: -90px;
+    left: -55px;
     top: 8px;
   }
   .banners .headphone img {
@@ -72,5 +147,41 @@
   .banners .var .var-banner img {
     position: relative;
     left: -30%;
+  }
+  .popular-product-image,
+  .ipad-pro-image,
+  .samsung-image,
+  .macbook-pro-image {
+    height: 20vw !important;
+  }
+}
+@media (min-width: 768px) {
+  .sale .group-left-image img:nth-child(1) {
+    position: relative;
+    top: -70px;
+    left: 185px;
+    z-index: 1;
+  }
+  .sale .group-left-image img:nth-child(2) {
+    position: relative;
+    left: -325px;
+    top: 35px;
+    z-index: 3;
+  }
+  .sale .group-left-image img:nth-child(3) {
+    position: relative;
+    left: -155px;
+    top: 20px;
+  }
+  .sale .group-right-image img:first-child {
+    position: relative;
+    top: 330px;
+    right: -10px;
+    z-index: 1;
+  }
+  .sale .group-right-image img:last-child {
+    position: relative;
+    left: 115px;
+    top: -135px;
   }
 }
