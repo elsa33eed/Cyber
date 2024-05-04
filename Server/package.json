@@ -11,9 +11,12 @@
   "name": "server",
   "version": "1.0.0",
   "main": "Main.js",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon Main.js"
+    "start": "node Main.js"
   },
   "author": "",
   "license": "ISC",
