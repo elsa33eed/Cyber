@@ -1,8 +1,11 @@
 import React from "react";
 import "./stepone.css";
-import Address from "../../Components/address-step/Address";
-import Whitebutton from "./../../Components/Buttons/whiteButton/Whitebutton";
-import Blackbutton from "./../../Components/Buttons/BlackButton/Blackbutton";
+import Address from "../../../Components/address-step/Address";
+import Whitebutton from "../../../Components/Buttons/whiteButton/Whitebutton";
+import Blackbutton from "../../../Components/Buttons/BlackButton/Blackbutton";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined";
+import AccountBalanceOutlinedIcon from "@mui/icons-material/AccountBalanceOutlined";
 
 export default function StepOne() {
   return (
@@ -10,22 +13,28 @@ export default function StepOne() {
       <section className="step-one overflow-hidden">
         <div className="container">
           <div className="steps py-5 d-flex justify-content-between align-items-center">
-            <div className="address-step">
-              <div className="icon"></div>
+            <div className="address-step d-flex align-items-center">
+              <div className="icon">
+                <LocationOnIcon></LocationOnIcon>
+              </div>
               <div className="info text-start">
                 <p className="m-0">step 1</p>
                 <h5>Address</h5>
               </div>
             </div>
-            <div className="shipping">
-              <div className="icon"></div>
+            <div className="shipping-step d-flex align-items-center">
+              <div className="icon">
+                <ShoppingBasketOutlinedIcon></ShoppingBasketOutlinedIcon>
+              </div>
               <div className="info text-start">
                 <p className="m-0">step 2</p>
                 <h5>Shipping</h5>
               </div>
             </div>
-            <div className="payment">
-              <div className="icon"></div>
+            <div className="payment-step d-flex align-items-center">
+              <div className="icon">
+                <AccountBalanceOutlinedIcon></AccountBalanceOutlinedIcon>
+              </div>
               <div className="info text-start">
                 <p className="m-0">step 3</p>
                 <h5>Payment</h5>
@@ -37,7 +46,7 @@ export default function StepOne() {
             <Address></Address>
             <Address></Address>
           </div>
-          <div className="add-address d-flex align-items-center flex-column justify-content-center">
+          <div className="add-address mb-3 d-flex align-items-center flex-column justify-content-center">
             <div className="icon d-flex">
               <h5>+</h5>
             </div>

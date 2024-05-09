@@ -1,0 +1,48 @@
+p {
+  margin: 0;
+}
+.step-two {
+  margin-top: 60px;
+  border-top: 1px solid #b5b5b5;
+}
+.step-two .steps p {
+  font-size: 12px;
+  font-weight: bold;
+}
+.step-two .steps h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.step-two .steps .address-step,
+.step-two .steps .payment-step {
+  color: #b2b2b2;
+}
+.step-two .steps h5 {
+  margin: 0px;
+}
+.step-two .steps .icon {
+  margin-right: 5px;
+}
+.choose-shipping-plan {
+  margin-bottom: 50px;
+}
+.regular-shipping,
+.soon-shipping {
+  display: flex;
+  padding: 10px 15px;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d1d1d8;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.regular-shipping label,
+.soon-shipping label {
+  font-weight: 500;
+  cursor: pointer;
+}

@@ -10,8 +10,8 @@
   font-size: 14px;
   font-weight: bold;
 }
-.step-one .steps .shipping,
-.step-one .steps .payment {
+.step-one .steps .shipping-step,
+.step-one .steps .payment-step {
   color: #b2b2b2;
 }
 .step-one .add-address .icon h5 {
@@ -31,4 +31,10 @@
 }
 .step-one .add-address .text p {
   font-size: 14px;
+}
+.step-one .steps h5 {
+  margin: 0px;
+}
+.step-one .steps .icon {
+  margin-right: 5px;
 }

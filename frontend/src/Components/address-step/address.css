@@ -28,7 +28,8 @@
   display: flex;
   font-size: 13px;
   padding-left: 25px;
-  width: max-content;
+  width: 100%;
+  text-align: start;
 }
 .address-info .text .title input {
   width: 17px;

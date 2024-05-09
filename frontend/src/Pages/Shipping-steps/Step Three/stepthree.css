@@ -1,0 +1,36 @@
+p {
+  margin: 0;
+}
+.step-three {
+  margin-top: 60px;
+  border-top: 1px solid #b5b5b5;
+}
+.step-three .steps p {
+  font-size: 12px;
+  font-weight: bold;
+}
+.step-three .steps h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.step-three .steps .address-step,
+.step-three .steps .shipping-step {
+  color: #b2b2b2;
+}
+.step-three .steps h5 {
+  margin: 0px;
+}
+.step-three .steps .icon {
+  margin-right: 5px;
+}
+.lists {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.lists li a {
+  color: #000000;
+  text-decoration: none;
+}
