@@ -1,0 +1,26 @@
+.shop-page {
+  margin-top: 60px;
+  border-top: 1px solid #b5b5b5;
+}
+.shop-page .filter .btn-filter {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+  width: 150px;
+  align-items: center;
+  border: 1px solid #d4d4d4;
+  color: #000000;
+  text-decoration: none;
+  padding: 7px 15px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.shop-page .filter .btn-filter:hover {
+  border: 1px solid #000000;
+}
+.shop-page .filter a {
+  text-decoration: none;
+}
