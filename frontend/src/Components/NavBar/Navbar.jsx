@@ -18,7 +18,7 @@ export default function Navbar() {
       >
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            <img src="/Images/Logo/Color=Black.png" alt="Logo" />
+            <img src="/Images/Logo/Color-black.png" alt="Logo" />
           </Link>
           <button
             className="navbar-toggler"

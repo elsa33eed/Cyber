@@ -50,8 +50,8 @@ function App() {
             <Route path="/shop" element={<ShopPage></ShopPage>} />
             <Route path="/shop/product" element={<ProductPage></ProductPage>} />
           </Routes>
+          <Footer></Footer>
         </BrowserRouter>
-        <Footer></Footer>
       </Suspense>
     </div>
   );

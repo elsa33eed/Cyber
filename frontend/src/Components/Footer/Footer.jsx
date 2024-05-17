@@ -4,6 +4,7 @@ import XIcon from "@mui/icons-material/X";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -17,7 +18,7 @@ export default function Footer() {
             <div className="row">
               <div className="cyber-content py-4 col-12 col-md-4 text-center text-md-start ">
                 <img
-                  src="/Images/Logo/color=white.png"
+                  src="/Images/Logo/color-White.png"
                   className="img-fluid mb-4"
                   alt="Logo"
                 />
@@ -51,18 +52,18 @@ export default function Footer() {
             </div>
           </div>
           <div className="social-links d-flex justify-content-center justify-content-md-start gap-5">
-            <a href="#">
+            <Link to="#">
               <XIcon></XIcon>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <FacebookOutlinedIcon></FacebookOutlinedIcon>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <InstagramIcon></InstagramIcon>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <YouTubeIcon></YouTubeIcon>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
