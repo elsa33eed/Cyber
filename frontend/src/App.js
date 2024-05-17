@@ -20,6 +20,7 @@ const ShoppingStepThree = lazy(() =>
 );
 const ContactUsPage = lazy(() => import("./Pages/Contact-Us/ContactUs"));
 const ShopPage = lazy(() => import("./Pages/Shop/Shop"));
+const ProductPage = lazy(() => import("./Pages/Product/Product"));
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
               element={<ContactUsPage></ContactUsPage>}
             />
             <Route path="/shop" element={<ShopPage></ShopPage>} />
+            <Route path="/shop/product" element={<ProductPage></ProductPage>} />
           </Routes>
         </BrowserRouter>
         <Footer></Footer>
