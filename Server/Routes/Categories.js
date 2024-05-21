@@ -1,7 +1,7 @@
 const express = require("express");
 const router = new express.Router()
 const adminAcces  = require("../MiddleWare/usersMWPermission")
-const CategoryController = require("../Controllers/AcessoriesCategory")
+const CategoryController = require("../Controllers/Categories")
 
 //Get All Category
 router.get('/', CategoryController.getAllCategories)

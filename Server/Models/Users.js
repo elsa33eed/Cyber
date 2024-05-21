@@ -2,9 +2,12 @@ const mongoose = require('./db');
 
 const UsersSchema = new mongoose.Schema({
     "_id": { type: Number },
+    "FirstName":{type:String},
+    "LastName":{type:String},
     "Username": {type: String},
     "Email": {type: String}, 
-    "Password": {type: String}  ,
+    "Password": {type: String},
+    "Telephone":{type: String},
     "IsAdmin": {type: Boolean}
 });
 const user = mongoose.model("Users", UsersSchema);
