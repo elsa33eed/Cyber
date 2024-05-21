@@ -1,5 +1,5 @@
-const CategoriesValid = require("../Utils/AcessoriesCategoryValid")
-const CategoriesModel = require("../Models/AcessoriesCategory")
+const CategoriesValid = require("../Utils/CategoriesValid")
+const CategoriesModel = require("../Models/Categories")
 
 const getAllCategories = async (req, res) => {
     const Categories = await CategoriesModel.getAllCategories();
