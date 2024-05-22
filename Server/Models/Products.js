@@ -10,7 +10,10 @@ const ProductSchema = new mongoose.Schema({
     "DiscountId": { type: Number },
     "Description": { type: String },
     "Quantity": { type: Number },
-    "Price":{type:Number}
+    "Price": { type: Number },
+    "NewArrival": {type: Boolean},
+    "BestSeller": {type: Boolean},
+    "FeautredProduct": {type: Boolean},
 });
 const Product = mongoose.model("Products", ProductSchema);
 
@@ -19,34 +22,34 @@ const getAllProducts = async () => {
     return Products;
 }
 
-const getProductsByCategory = async(ProductsCategory)=>{
-    const foundedProducts = await Product.find({CategoryId:ProductsCategory})
+const getProductsByCategory = async (ProductsCategory) => {
+    const foundedProducts = await Product.find({ CategoryId: ProductsCategory })
     return foundedProducts;
 }
 
 const getProduct = async (id) => {
-    const foundedProduct = await Product.find({_id:id})
+    const foundedProduct = await Product.find({ _id: id })
     return foundedProduct;
 }
 
-const updateProduct = async (id, data)=>{
-    var updatedProduct = await Product.findByIdAndUpdate(id, data, {new:true, runValidators:true})
+const updateProduct = async (id, data) => {
+    var updatedProduct = await Product.findByIdAndUpdate(id, data, { new: true, runValidators: true })
     return updatedProduct;
 }
 
-const deleteProduct = async (id)=>{
+const deleteProduct = async (id) => {
     await Product.findByIdAndDelete(id)
 }
 
-const addProduct = async (data)=>{
+const addProduct = async (data) => {
     var maxIdProduct = await Product.findOne({}, { _id: 1 }, { sort: { _id: -1 } });
     var maxId = maxIdProduct ? maxIdProduct._id : 0;
-    data._id = maxId+1;
+    data._id = maxId + 1;
     var newProduct = await new Product(data);
     await newProduct.save();
-    return newProduct  
+    return newProduct
 }
-module.exports= {
+module.exports = {
     getAllProducts,
     getProductsByCategory,
     getProduct,
