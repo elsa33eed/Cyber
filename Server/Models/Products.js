@@ -5,7 +5,7 @@ const ProductSchema = new mongoose.Schema({
     "BrandName": { type: String },
     "ModelName": { type: String },
     "Picture": { type: String },
-    "CategoryId": { type: Number },
+    "CategoryId": { type: [Number], required: true },
     "Color": { type: String },
     "DiscountId": { type: Number },
     "Description": { type: String },
@@ -14,8 +14,7 @@ const ProductSchema = new mongoose.Schema({
     "DiscountActive": { type: Boolean },
     "NewArrival": { type: Boolean },
     "BestSeller": { type: Boolean },
-    "FeaturedProduct": { type: Boolean },
-    "popularProduct": {type: Boolean}
+    "FeaturedProduct": { type: Boolean }
 });
 const Product = mongoose.model("Products", ProductSchema);
 
