@@ -17,9 +17,10 @@ const ProductSchema = {
         DiscountActive: { type: "boolean" },
         NewArrival: { type: "boolean" },
         BestSeller: { type: "boolean" },
-        FeautredProduct: { type: "boolean" }
+        FeaturedProduct: { type: "boolean" },
+        popularProduct: {type: "boolean"}
     },
-    required: ["BrandName", "ModelName", "Picture", "CategoryId", "Color", "DiscountId", "Description", "Quantity", "Price","DiscountActive", "NewArrival"],
+    required: ["BrandName", "ModelName", "Picture", "CategoryId", "Color", "DiscountId", "Description", "Quantity", "Price","DiscountActive", "NewArrival"," BestSeller","FeaturedProduct", "popularProduct"],
     additionalProperties: false
 }
 module.exports = ajv.compile(ProductSchema);
