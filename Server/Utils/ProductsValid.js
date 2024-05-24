@@ -14,11 +14,12 @@ const ProductSchema = {
         Description: { type: "string" },
         Quantity: { type: "integer" },
         Price: { type: "integer" },
+        DiscountActive: { type: "boolean" },
         NewArrival: { type: "boolean" },
         BestSeller: { type: "boolean" },
         FeautredProduct: { type: "boolean" }
     },
-    required: ["BrandName", "ModelName", "Picture", "CategoryId", "Color", "DiscountId", "Description", "Quantity", "Price", "NewArrival"],
+    required: ["BrandName", "ModelName", "Picture", "CategoryId", "Color", "DiscountId", "Description", "Quantity", "Price","DiscountActive", "NewArrival"],
     additionalProperties: false
 }
 module.exports = ajv.compile(ProductSchema);
