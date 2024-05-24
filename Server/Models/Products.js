@@ -14,7 +14,8 @@ const ProductSchema = new mongoose.Schema({
     "DiscountActive": { type: Boolean },
     "NewArrival": { type: Boolean },
     "BestSeller": { type: Boolean },
-    "FeautredProduct": { type: Boolean },
+    "FeaturedProduct": { type: Boolean },
+    "popularProduct": {type: Boolean}
 });
 const Product = mongoose.model("Products", ProductSchema);
 
