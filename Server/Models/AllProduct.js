@@ -76,9 +76,9 @@ const getProduct = async (id, productType) => {
 const getProductsByCategory = async (ProductsCategory, productType) => {
     let product
     if (productType) {
-        product = await Product.findOne({ CategoryId: ProductsCategory, productType })
+        product = await Product.find({ CategoryId: ProductsCategory, productType })
     } else {
-        product = await Product.findOne({ CategoryId: ProductsCategory });
+        product = await Product.find({ CategoryId: ProductsCategory });
     }
     return product;
 }
