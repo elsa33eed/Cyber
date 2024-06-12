@@ -7,6 +7,7 @@ const SmartWatchSchema = new mongoose.Schema({
     BatteryCapacity: { type: String },
     ConnectivityTechnology: { type: String },
     ScreenSize: { type: String }, 
+    Color: { type: [String], required: true }
 });
 
 const SmartWatch = Product.discriminator('SmartWatch', SmartWatchSchema);

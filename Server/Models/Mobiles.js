@@ -9,6 +9,7 @@ const MobileSchema = new mongoose.Schema({
     OS: { type: String }, 
     Ram: { type: String }, 
     Weight: { type: String }, 
+    Color: { type: [String], required: true }
 });
 
 const Mobile = Product.discriminator('Mobile', MobileSchema);

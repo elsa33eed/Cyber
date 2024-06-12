@@ -6,7 +6,8 @@ const CameraSchema = new mongoose.Schema({
     MaximumFocalLength: { type: String },
     FileFormat: { type: String },
     ConnectivityTech: { type: String },
-    FormFactor: { type: String }, 
+    FormFactor: { type: String },
+    Color: { type: [String], required: true }
 });
 
 const Camera = Product.discriminator('Camera', CameraSchema);

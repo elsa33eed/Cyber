@@ -8,6 +8,7 @@ const HeadPhoneSchema = new mongoose.Schema({
     HeadphonesJack: { type: String },
     ConnectivityTechnology: { type: String }, 
     WirelessCommunicationTechnology: { type: String }, 
+    Color: { type: [String], required: true }
 });
 
 const HeadPhone = Product.discriminator('HeadPhone', HeadPhoneSchema);

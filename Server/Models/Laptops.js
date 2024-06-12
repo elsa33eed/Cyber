@@ -7,6 +7,7 @@ const LaptopSchema = new mongoose.Schema({
     "GraphicCard": {type:String},
     "Screen": { type: String },
     "Ram": { type: String },
+    "Color": { type: [String], required: true }
 });
 
 const Laptop = Product.discriminator('Laptop', LaptopSchema);
